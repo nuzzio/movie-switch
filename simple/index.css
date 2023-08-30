@@ -110,39 +110,6 @@ body {
   background-color: green;
 }
 
-/* Make adjustments for smaller screens */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .side {
-    padding: 10px;
-    text-align: center;
-  }
-
-  .name-left,
-  .name-right {
-    font-size: 36px;
-  }
-
-  .checkmark-left,
-  .checkmark-right,
-  .x-mark-left,
-  .x-mark-right {
-    font-size: 18px;
-  }
-
-  .slider-container {
-    padding: 10px;
-  }
-
-  .slider {
-    width: 250px;
-  }
-
-  .slider-thumb {
-    width: 70px;
-  }
-}
+-webkit-justify-content: flex-end;
+align-items: flex-end;
+-webkit-align-items: flex-end;
