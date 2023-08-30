@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, beige 50%, lightgreen 50%);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-side {
+  justify-content: flex-start;
+}
+
+.right-side {
+  justify-content: flex-start;
+}
+
+.name-left {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.name-right {
+  font-size: 48px;
+  color: darkgreen;
+}
+
+.checkmark-left,
+.checkmark-right,
+.x-mark-left,
+.x-mark-right {
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.checkmark-left,
+.x-mark-left {
+  color: green;
+}
+
+.checkmark-right,
+.x-mark-right {
+  color: darkgreen;
+}
+
+.checkmark-left {
+  display: inline;
+}
+
+.x-mark-left {
+  display: none;
+}
+
+.checkmark-right {
+  display: none;
+}
+
+.x-mark-right {
+  display: inline;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: auto;
+  padding: 20px;
+}
+
+.slider {
+  width: 300px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-thumb {
+  width: 80px;
+  height: 50px;
+  background-color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  transition: left 0.3s, background-color 0.3s;
+}
+
+.on .slider-thumb {
+  left: calc(100% - 80px);
+  background-color: green;
+}
