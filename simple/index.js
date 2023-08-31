@@ -9,16 +9,16 @@ document.addEventListener("DOMContentLoaded", function() {
   const savedState = localStorage.getItem("sliderState");
   if (savedState === "on") {
     sliderButton.classList.add("on");
-      xMarkRight.style.display = "none";
-      checkmarkRight.style.display = "inline";
-      xMark.style.display = "inline";
-      checkmark.style.display = "none";
-  } else {
-    sliderButton.classList.remove("off");
-      checkmarkRight.style.display = "none";
       xMarkRight.style.display = "inline";
+      checkmarkRight.style.display = "none";
       xMark.style.display = "none";
       checkmark.style.display = "inline";
+  } else {
+    sliderButton.classList.remove("off");
+      checkmarkRight.style.display = "inline";
+      xMarkRight.style.display = "none";
+      xMark.style.display = "inline";
+      checkmark.style.display = "none";
   }
 
   // Toggle the state and update the UI
@@ -28,16 +28,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (this.classList.contains("on")) {
       localStorage.setItem("sliderState", "on");
-      xMarkRight.style.display = "none";
-      checkmarkRight.style.display = "inline";
-      xMark.style.display = "inline";
-      checkmark.style.display = "none";
-    } else {
-      localStorage.setItem("sliderState", "off");
-      checkmarkRight.style.display = "none";
       xMarkRight.style.display = "inline";
+      checkmarkRight.style.display = "none";
       xMark.style.display = "none";
       checkmark.style.display = "inline";
+    } else {
+      localStorage.setItem("sliderState", "off");
+      checkmarkRight.style.display = "inline";
+      xMarkRight.style.display = "none";
+      xMark.style.display = "inline";
+      checkmark.style.display = "none";
     }
   });
 });
