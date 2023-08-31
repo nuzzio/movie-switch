@@ -27,6 +27,10 @@ https://movies.rene.foo
 
 ## Release Notes
 
+### 1.0.2 Release
+
+- Added responsive styles
+
 ### 1.0.1 Release
 
 - Names are now editable and persisted.
