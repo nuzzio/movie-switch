@@ -5,14 +5,14 @@ function toggleEdit(className) {
 
   if (nameElement.contentEditable === "true") {
     nameElement.contentEditable = "false";
-    nameElement.setAttribute("name-focus", "false"); // Remove the focus attribute
+    nameElement.setAttribute("name-focus", "false");
     editIcon.style.color = "";
-    nameElement.style.border = "none"; // Remove the border when not editing
+    nameElement.style.border = "none";
   } else {
     nameElement.contentEditable = "true";
-    nameElement.setAttribute("name-focus", "true"); // Add the focus attribute
-    editIcon.style.color = "blue"; // Change color to indicate editing mode
-    nameElement.style.border = "1px #d3d3d3"; // Apply a border when editing
+    nameElement.setAttribute("name-focus", "true");
+    editIcon.style.color = "blue";
+    nameElement.style.border = "1px #d3d3d3";
     nameElement.focus();
   }
 }
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const editIcon = this.previousElementSibling;
     editIcon.style.color = "";
     this.style.border = "none";
-    this.contentEditable = "false"; // Add this line
+    this.contentEditable = "false";
     const className = this.classList[1];
     localStorage.setItem(className, this.textContent);
   });
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const editIcon = this.previousElementSibling;
     editIcon.style.color = "";
     this.style.border = "none";
-    this.contentEditable = "false"; // Add this line
+    this.contentEditable = "false";
     const className = this.classList[1];
     localStorage.setItem(className, this.textContent);
   });
