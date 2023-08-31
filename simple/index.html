@@ -9,12 +9,18 @@
 <body>
   <div class="container">
     <div class="side left-side">
-      <div class="name-left">René</div>
+      <div class="name-container">
+        <div class="edit-icon" onclick="toggleEdit('name-left')">✎</div>
+        <div class="name name-left" contenteditable="false">René</div>
+      </div>
       <div class="checkmark-left">✓ - It's your pick</div>
       <div class="x-mark-left">Movie selected :)</div>
     </div>
     <div class="side right-side">
-      <div class="name-right">Melody</div>
+      <div class="name-container">
+        <div class="edit-icon" onclick="toggleEdit('name-right')">✎</div>
+        <div class="name name-right" contenteditable="false">Melody</div>
+      </div>
       <div class="checkmark-right">✓ - It's your pick</div>
       <div class="x-mark-right">Movie selected :)</div>
     </div>

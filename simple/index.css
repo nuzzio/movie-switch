@@ -113,3 +113,15 @@ body {
 -webkit-justify-content: flex-end;
 align-items: flex-end;
 -webkit-align-items: flex-end;
+
+/* Add cursor pointer to the edit icon */
+.edit-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Add pointer cursor on hover for edit icon */
+.edit-icon:hover {
+  cursor: pointer;
+}
