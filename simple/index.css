@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(to right, beige 50%, lightgreen 50%);
+  background: linear-gradient(to right, #e9e4d5 50%, #abc1a6 50%);
 }
 
 .container {
