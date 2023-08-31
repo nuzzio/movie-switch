@@ -6,6 +6,12 @@ This small web application simply records the state of the toggle into the brows
 
 ## Usage
 
+Feel free to use the demo version as the names have been made editable:
+
+https://movies.rene.foo
+
+Or to host your own:
+
 1. Clone this repository.
 2. Modify person names in the `simple/index.html` page source as needed
 3. Deploy to your server.
@@ -20,6 +26,10 @@ This small web application simply records the state of the toggle into the brows
 https://movies.rene.foo
 
 ## Release Notes
+
+### 1.0.1 Release
+
+- Names are now editable and persisted.
 
 ### 1.0.0 Release
 
