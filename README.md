@@ -6,13 +6,21 @@ This small web application simply records the state of the toggle into the brows
 
 ## Usage
 
-1. Deploy to your server.
-2. Select a single mobile device to be the source of truth.
-3. Pull up site on the mobile device.
-4. Save the site to the home screen.
-5. Every time you decide to watch a film, open the site, and record who picks the film.
-6. Enjoy never thinking about whose pick it is.
+1. Clone this repository.
+2. Modify person names in the `simple/index.html` page source as needed
+3. Deploy to your server.
+4. Select a single mobile device to be the source of truth.
+5. Pull up site on the mobile device.
+6. Save the site to the home screen.
+7. Every time you decide to watch a film, open the site, and record who picks the film.
+8. Enjoy never thinking about whose pick it is.
 
 ## Demo
 
 https://movies.rene.foo
+
+## Release Notes
+
+### 1.0.0 Release
+
+- Basic functionality release.
