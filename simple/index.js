@@ -1,4 +1,3 @@
-// Define the toggleEdit function in the global scope
 function toggleEdit(className) {
   const nameElement = document.querySelector(`.${className}`);
   const editIcon = nameElement.previousElementSibling;

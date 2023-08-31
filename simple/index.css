@@ -11,8 +11,11 @@ body {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  /* Allow items to wrap to a new line on smaller screens */
+  justify-content: center;
   width: 100%;
-  align-items: flex-start;
+  padding: 20px;
 }
 
 .side {
@@ -20,7 +23,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
+  /* Adjust padding for smaller screens */
+  text-align: center;
+  /* Center align content */
 }
 
 .left-side {
@@ -31,15 +37,29 @@ body {
   justify-content: flex-start;
 }
 
+.name-left,
+.name-right {
+  font-size: 24px;
+}
+
+.checkmark-left,
+.checkmark-right,
+.x-mark-left,
+.x-mark-right {
+  font-size: 18px;
+}
+
 .name-left {
   font-size: 48px;
   font-weight: bold;
   margin-top: 0;
+  display: inline-block;
 }
 
 .name-right {
   font-size: 48px;
   color: darkgreen;
+  display: inline-block;
 }
 
 .checkmark-left,
@@ -82,7 +102,7 @@ body {
   align-items: flex-end;
   width: 100%;
   margin-top: 8%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .slider {
@@ -110,18 +130,39 @@ body {
   background-color: green;
 }
 
--webkit-justify-content: flex-end;
-align-items: flex-end;
--webkit-align-items: flex-end;
-
-/* Add cursor pointer to the edit icon */
 .edit-icon {
-  font-size: 24px;
+  font-size: 36px;
+  color: gray;
   cursor: pointer;
   margin-right: 5px;
+  display: inline-block;
 }
 
-/* Add pointer cursor on hover for edit icon */
 .edit-icon:hover {
   cursor: pointer;
+  color: blue;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .side {
+    padding: 5px;
+  }
+
+  .name-left,
+  .name-right {
+    font-size: 36px;
+  }
+
+  .checkmark-left,
+  .checkmark-right,
+  .x-mark-left,
+  .x-mark-right {
+    font-size: 18px;
+  }
+
+  .edit-icon {
+    font-size: 24px;
+  }
+
 }
